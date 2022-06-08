@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3564354393648409127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2650384453971709593}
+  - component: {fileID: 8216656340447063729}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2650384453971709593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3564354393648409127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5967033593492708687}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8216656340447063729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3564354393648409127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61bd66b677e15e4ab243f0d979c5880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: SFX_DISSOLVE
+    clip: {fileID: 8300000, guid: d9d3d2d18c30b004e8b573e6ea52bcd1, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    awake: 0
+    hasPlayed: 0
+    spatialBlend: 0
+    bypassListenerEffects: 0
+    mixerGroup: {fileID: 5531535454743097063, guid: fdd7822b6ff64e947a5b91cf81e0a62b, type: 2}
+    source: {fileID: 0}
+  - name: SFX_GUNSHOT
+    clip: {fileID: 8300000, guid: 253d2dc941d328149a50ebaefac39944, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    awake: 0
+    hasPlayed: 0
+    spatialBlend: 0
+    bypassListenerEffects: 0
+    mixerGroup: {fileID: 5531535454743097063, guid: fdd7822b6ff64e947a5b91cf81e0a62b, type: 2}
+    source: {fileID: 0}
+  - name: BGM_MENU
+    clip: {fileID: 8300000, guid: c53acf7af8fb1344886a95231f679fd1, type: 3}
+    volume: 0.7
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    awake: 0
+    hasPlayed: 0
+    spatialBlend: 0
+    bypassListenerEffects: 0
+    mixerGroup: {fileID: 3201956366074193546, guid: fdd7822b6ff64e947a5b91cf81e0a62b, type: 2}
+    source: {fileID: 0}
+  - name: SFX_HOVER
+    clip: {fileID: 8300000, guid: d7e60e9e303980f4da1449d5fe9353de, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    awake: 0
+    hasPlayed: 0
+    spatialBlend: 0
+    bypassListenerEffects: 0
+    mixerGroup: {fileID: 5531535454743097063, guid: fdd7822b6ff64e947a5b91cf81e0a62b, type: 2}
+    source: {fileID: 0}
+  AudioMix: {fileID: 24100000, guid: fdd7822b6ff64e947a5b91cf81e0a62b, type: 2}
+--- !u!1 &5967033593492708686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5967033593492708687}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5967033593492708687
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5967033593492708686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5967033593554518973}
+  - {fileID: 2650384453971709593}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5967033593554518972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5967033593554518973}
+  - component: {fileID: 5967033593554518962}
+  m_Layer: 0
+  m_Name: Menu Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5967033593554518973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5967033593554518972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5967033593492708687}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5967033593554518962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5967033593554518972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f126ed9f943ebe04caf47a2205c74d51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 0}
+  Settings: {fileID: 0}
+  MASTER_SLIDER: {fileID: 0}
+  BGM_SLIDER: {fileID: 0}
+  SFX_SLIDER: {fileID: 0}
+  Title: {fileID: 0}
+  MASTER_VAL: {fileID: 0}
+  BGM_VAL: {fileID: 0}
+  SFX_VAL: {fileID: 0}
